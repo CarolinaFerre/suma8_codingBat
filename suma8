@@ -1,0 +1,34 @@
+package ejerciciosdearrays;
+
+public class dosSuma8 {
+	static boolean suma;
+	static int sumatotal;
+	public static int sumaTotal(int[]nums) {
+		for(int i=0;i<nums.length;i++) {
+			if(nums[i]==2) {
+				sumatotal=sumatotal+nums[i];
+			}
+		}
+		return sumatotal;
+	}
+	public static boolean suma8(int sumatotal,boolean suma) {
+		if(sumatotal==8) {
+		return suma=true;
+	
+		}else {
+		return suma=false;
+		}
+	}
+		
+	public static void main(String[] args) {
+		
+		int[] nums= {2,3,2,2,7,2};
+		System.out.println("La suma total de los 2 del arreglo es= "+dosSuma8.sumaTotal(nums));
+		System.out.println("A continuación se muestra si la suma de las cifras 2 es igual a 8 o no...");
+		System.out.println("El sistema mostrará true si la suma es igual a 8 y false si no lo es...");
+		System.out.println("El resultado es=...");
+		System.out.println(dosSuma8.suma8(sumatotal, suma));
+		
+	}
+
+}
